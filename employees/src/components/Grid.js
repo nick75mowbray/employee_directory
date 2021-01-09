@@ -37,7 +37,7 @@ const columns: ColDef[] = [
 ];
 
   return (
-    <div style={{ height: '90vh', width: '100%' }}>
+    <div style={{ height: '90vh', width: '95vw' }}>
       <DataGrid rows={rows} columns={columns} />
     </div>
   );
