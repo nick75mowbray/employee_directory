@@ -8,7 +8,7 @@ import API from './utils/API';
 export default function App() {
 
   const [users, setUsers] = useState([]);
-  const [search, setSearch] = useState("");
+  
   const [filteredUsers, setFilteredUsers] = useState([]);
 
   // get employee data when page loads
@@ -22,7 +22,7 @@ export default function App() {
  const handleSearchChange = event => {
     
   // set search state
-    setSearch(event.target.value);
+    const search = event.target.value;
 
     // filter employees
     const filteredList = users.filter(item => {
