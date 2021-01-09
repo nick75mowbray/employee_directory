@@ -11,6 +11,7 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
 
+  // get employee data when page loads
   useEffect(()=>{
     API.getUserData().then(results=>{
       setUsers(results.data.results);
@@ -19,16 +20,21 @@ export default function App() {
   },[]);
 
  const handleSearchChange = event => {
-    console.log(event.target.value);
+    
+  // set search state
     setSearch(event.target.value);
+
+    // filter employees
     const filteredList = users.filter(item => {
-      // merge data together, then see if user input is anywhere inside
       let values = Object.values(item)
         .join("")
         .toLowerCase();
       return values.indexOf(search.toLowerCase()) !== -1;
     });
+
+    // set state of filtered employees
     setFilteredUsers(filteredList);
+
   }
 
   return (
