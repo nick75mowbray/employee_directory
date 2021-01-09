@@ -3,7 +3,7 @@ import { DataGrid, RowsProp, ColDef } from '@material-ui/data-grid';
 
 
 
-export default function Grid({userData, name}) {
+export default function Grid({userData}) {
 
 let userRows = []; 
 
