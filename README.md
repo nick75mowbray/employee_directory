@@ -1,4 +1,5 @@
 # Employee Directory
+[link to deployed site](https://nick75mowbray.github.io/employee_directory/)
 
 ## Description
  This is a React.js application that gets data about random employees and displays them allowing for filtering and searching of employees.
