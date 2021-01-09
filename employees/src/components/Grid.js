@@ -30,10 +30,10 @@ function pullData(item, index) {
 const rows: RowsProp = userRows;
 
 const columns: ColDef[] = [
-  { field: 'col1', headerName: 'First Name', width: 120 },
-  { field: 'col2', headerName: 'Last Name', width: 150 },
-  { field: 'col3', headerName: 'Phone', width: 150 },
-  { field: 'col4', headerName: 'Email', width: 150 },
+  { field: 'col1', headerName: 'First Name', width: '15vw' },
+  { field: 'col2', headerName: 'Last Name', width: '20vw' },
+  { field: 'col3', headerName: 'Phone', width: '20vw' },
+  { field: 'col4', headerName: 'Email', width: '20vw' },
 ];
 
   return (
